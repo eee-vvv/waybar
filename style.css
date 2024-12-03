@@ -1,0 +1,89 @@
+@import "mocha.css";
+
+* {
+  font-family: New Heterodox Mono;
+  font-size: 12px;
+  min-height: 0;
+}
+
+#waybar {
+  background: transparent;
+  background-color: alpha(@surface0, 0.8);
+
+  color: @text;
+  margin: 0px 0px;
+}
+
+#workspaces {
+  margin: 0px;
+  margin-left: 0rem;
+}
+
+#workspaces button {
+  border-radius: 0rem;
+  color: @text;
+  padding: 0.5rem;
+}
+
+#workspaces button.focused {
+  color: @surface1;
+  background-color: @lavender;
+}
+
+#workspaces button:hover {
+  color: @sapphire;
+}
+
+#wireplumber,
+#idle_inhibitor,
+#network,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#battery,
+#clock,
+#tray,
+#custom-power {
+  padding: 0.5rem 1rem;
+  margin: 0px 0;
+}
+
+#clock {
+  color: @blue;
+  margin-right: 0rem;
+}
+
+#battery {
+  color: @green;
+}
+
+#battery.charging {
+  color: @green;
+}
+
+#battery.warning:not(.charging) {
+  color: @red;
+}
+
+#backlight {
+  color: @yellow;
+}
+
+#backlight,
+#battery {
+  border-radius: 0;
+}
+
+#wireplumber {
+  color: @sky;
+}
+
+#idle_inhibitor {
+  color: @subtext0;
+  margin-left: 0rem;
+}
+
+#tray {
+  margin-right: 0rem;
+}
