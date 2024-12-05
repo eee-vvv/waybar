@@ -8,7 +8,7 @@
 
 #waybar {
   background: transparent;
-  background-color: alpha(@surface0, 0.8);
+  background-color: alpha(@surface0, 1);
 
   color: @text;
   margin: 0px 0px;
@@ -49,10 +49,34 @@
   margin: 0px 0;
 }
 
-#clock {
-  color: @blue;
-  margin-right: 0rem;
+#idle_inhibitor {
+  color: @subtext0;
 }
+
+#wireplumber {
+  color: @teal;
+}
+
+#network {
+    color: @mauve;
+}
+
+#cpu {
+    color: @yellow;
+}
+
+#memory {
+    color: @sapphire;
+}
+
+#temperature {
+    color: @pink;
+}
+
+#backlight {
+  color: @sky;
+}
+
 
 #battery {
   color: @green;
@@ -66,24 +90,9 @@
   color: @red;
 }
 
-#backlight {
-  color: @yellow;
-}
-
-#backlight,
-#battery {
-  border-radius: 0;
-}
-
-#wireplumber {
-  color: @sky;
-}
-
-#idle_inhibitor {
-  color: @subtext0;
-  margin-left: 0rem;
+#clock {
+  color: @blue;
 }
 
 #tray {
-  margin-right: 0rem;
 }
