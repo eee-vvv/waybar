@@ -8,10 +8,9 @@
 
 #waybar {
   background: transparent;
-  background-color: alpha(@surface0, 1);
-
+  background-color: alpha(@surface0, 0.8);
   color: @text;
-  margin: 0px 0px;
+  margin: 20px;
 }
 
 #workspaces {
@@ -58,19 +57,19 @@
 }
 
 #network {
-    color: @mauve;
+  color: @mauve;
 }
 
 #cpu {
-    color: @yellow;
+  color: @yellow;
 }
 
 #memory {
-    color: @sapphire;
+  color: @sapphire;
 }
 
 #temperature {
-    color: @pink;
+  color: @pink;
 }
 
 #backlight {
@@ -94,5 +93,4 @@
   color: @blue;
 }
 
-#tray {
-}
+#tray {}
